@@ -73,6 +73,11 @@ def generate_report():
         "high_spending_clients": high_spending_clients,
         "monthly_sales": monthly_sales
     }
+if __name__ == "__main__":
+    reporte = generate_report()
+
+    with open("final_report.json", "w") as archivo:
+        json.dump(reporte, archivo, indent=4, default=float)
 
 
 
