@@ -1,5 +1,7 @@
-from datetime import datetime
+# Importo la libreria datetime para manejar fechas y horas en las ventas
+from datetime import datetime 
 
+# Creo la clase Sale para representar una venta con su ID, ID del cliente, producto, categoría, monto y fecha
 class Sale():
     def __init__(self, sale_id:int, client_id:int, product:str, category:str, amount:float, date:datetime):
         self.sale_id = sale_id
